@@ -1,0 +1,522 @@
+<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="design4dj.com" resolutions="1x" timestamp="1722615222671">
+  <folder name="css">
+    <file name="site_global.css" crc="4148848339"/>
+    <file name="master_a-master.css" crc="4066835498" ref="event-info:fighters:contacts:index:tickets"/>
+    <file name="nomq_preview_master_a-master.css" crc="104214733" ref="event-info:fighters:contacts:index:tickets"/>
+    <file name="event-info.css" crc="4175525912" ref="event-info"/>
+    <file name="nomq_event-info.css" crc="3778998145" ref="event-info"/>
+    <file name="fighters.css" crc="8932214" ref="fighters"/>
+    <file name="nomq_fighters.css" crc="40137278" ref="fighters"/>
+    <file name="contacts.css" crc="4147137333" ref="contacts"/>
+    <file name="nomq_contacts.css" crc="61608374" ref="contacts"/>
+    <file name="index.css" crc="466250896" ref="index"/>
+    <file name="nomq_index.css" crc="469636342" ref="index"/>
+    <file name="tickets.css" crc="3982896694" ref="tickets"/>
+    <file name="nomq_tickets.css" crc="3796421580" ref="tickets"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:event-info:fighters:tickets:contacts"/>
+    <file name="museutils.js" crc="3939489907" ref="index:event-info:fighters:tickets:contacts"/>
+    <file name="whatinput.js" crc="86476730" ref="index:event-info:fighters:tickets:contacts"/>
+    <file name="museconfig.js" crc="128606099" ref="index:event-info:fighters:tickets:contacts"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="85124417" ref="index:event-info:fighters:tickets:contacts"/>
+    <file name="jquery.watch.js" crc="522499760" ref="index:event-info:fighters:tickets:contacts"/>
+    <file name="jquery.musemenu.js" crc="4139692962" ref="index:event-info:fighters:tickets:contacts"/>
+    <file name="webpro.js" crc="3856315280" ref="index:event-info:fighters:tickets:contacts"/>
+    <file name="musewpslideshow.js" crc="244150766" ref="index:event-info:fighters:tickets:contacts"/>
+    <file name="jquery.museoverlay.js" crc="3877667098" ref="index:event-info:fighters:tickets:contacts"/>
+    <file name="touchswipe.js" crc="3888935200" ref="index:event-info:fighters:tickets:contacts"/>
+    <file name="jquery.scrolleffects.js" crc="312044820" ref="index"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:event-info:fighters:tickets:contacts"/>
+    <file name="jquery.museresponsive.js" crc="95814420" ref="index:event-info:fighters:tickets:contacts"/>
+    <file name="require.js" crc="4177726516" ref="index:event-info:fighters:tickets:contacts"/>
+    <file name="form_check.php" crc="4108222811" ref="contacts"/>
+    <file name="form_throttle.php" crc="503802655" ref="contacts"/>
+    <file name="form_process.php" crc="260214869" ref="contacts"/>
+    <file name="form-u3338.php" crc="4274330268" ref="contacts"/>
+  </folder>
+  <folder name="images">
+    <file name="f1.png" crc="365953982" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="f2.png" crc="507032987" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="index:event-info:fighters:tickets:contacts"/>
+    <file name="logo_background.png" crc="4117460443" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="background.jpg" crc="3998577238" ref="index:event-info:fighters:tickets:contacts">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="sponsor_logo_01-u2594.png" crc="208811726" ref="index:event-info:fighters:tickets:contacts"/>
+    <file name="sponsor_logo_01-u2594-r.png" crc="4200845196" ref="index:event-info:fighters:tickets:contacts"/>
+    <file name="sponsor_logo_02-u2592.png" crc="168210748" ref="index:event-info:fighters:tickets:contacts"/>
+    <file name="sponsor_logo_02-u2592-r.png" crc="4075913155" ref="index:event-info:fighters:tickets:contacts"/>
+    <file name="sponsor_logo_03-u2590.png" crc="196035033" ref="index:event-info:fighters:tickets:contacts"/>
+    <file name="sponsor_logo_03-u2590-r.png" crc="80005871" ref="index:event-info:fighters:tickets:contacts"/>
+    <file name="sponsor_logo_04-u2593.png" crc="3869076864" ref="index:event-info:fighters:tickets:contacts"/>
+    <file name="sponsor_logo_04-u2593-r.png" crc="322340973" ref="index:event-info:fighters:tickets:contacts"/>
+    <file name="sponsor_logo_05-u2591.png" crc="4209347564" ref="index:event-info:fighters:tickets:contacts"/>
+    <file name="sponsor_logo_05-u2591-r.png" crc="347194216" ref="index:event-info:fighters:tickets:contacts"/>
+    <file name="f1-u1692-fr.png" crc="396073808" ref="index"/>
+    <file name="background-u1714-fr.jpg" crc="33688589" ref="index"/>
+    <file name="f1-u1692-fr2.png" crc="4290218020" ref="index"/>
+    <file name="f1_small.png" crc="3810010998" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="f2_small.png" crc="4235602014" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="hamburger_icon_02.png" crc="4032418545" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="hamburger_icon_01.png" crc="4011645077" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="btn_close.png" crc="4122704427" ref="index:event-info:fighters">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="video.jpg" crc="48800110" ref="event-info">
+      <caption webpage="event-info" alt=""/>
+    </file>
+    <file name="video_play_btn_01.png" crc="4195078118" ref="event-info">
+      <caption webpage="event-info" alt=""/>
+    </file>
+    <file name="video_play_btn_02.png" crc="4233268555" ref="event-info">
+      <caption webpage="event-info" alt=""/>
+    </file>
+    <file name="btn_close-u2448-r-fr.png" crc="4292248797" ref="event-info:fighters"/>
+    <file name="photo_01s.jpg" crc="4254725772" ref="event-info">
+      <caption webpage="event-info" alt=""/>
+      <caption webpage="event-info" alt=""/>
+    </file>
+    <file name="photo_01s-u2527-r-fr.png" crc="8977770" ref="event-info"/>
+    <file name="photo_02s.jpg" crc="3883842303" ref="event-info">
+      <caption webpage="event-info" alt=""/>
+      <caption webpage="event-info" alt=""/>
+    </file>
+    <file name="photo_02s-u2569-r-fr.png" crc="4259661855" ref="event-info"/>
+    <file name="photo_03s.jpg" crc="4043969148" ref="event-info">
+      <caption webpage="event-info" alt=""/>
+      <caption webpage="event-info" alt=""/>
+    </file>
+    <file name="photo_03s-u2575-r-fr.png" crc="3887158858" ref="event-info"/>
+    <file name="photo_04s.jpg" crc="140419907" ref="event-info">
+      <caption webpage="event-info" alt=""/>
+      <caption webpage="event-info" alt=""/>
+    </file>
+    <file name="photo_04s-u2581-r-fr.png" crc="57998312" ref="event-info"/>
+    <file name="photo_05s.jpg" crc="24734809" ref="event-info">
+      <caption webpage="event-info" alt=""/>
+      <caption webpage="event-info" alt=""/>
+    </file>
+    <file name="photo_05s-u2662-r-fr.png" crc="3976658066" ref="event-info"/>
+    <file name="photo_06s.jpg" crc="155990535" ref="event-info">
+      <caption webpage="event-info" alt=""/>
+      <caption webpage="event-info" alt=""/>
+    </file>
+    <file name="photo_06s-u2668-r-fr.png" crc="3953958878" ref="event-info"/>
+    <file name="photo_07s.jpg" crc="491298718" ref="event-info">
+      <caption webpage="event-info" alt=""/>
+      <caption webpage="event-info" alt=""/>
+    </file>
+    <file name="photo_07s-u2674-r-fr.png" crc="6482188" ref="event-info"/>
+    <file name="photo_08s.jpg" crc="381894164" ref="event-info">
+      <caption webpage="event-info" alt=""/>
+      <caption webpage="event-info" alt=""/>
+    </file>
+    <file name="photo_08s-u2680-r-fr.png" crc="3857961116" ref="event-info"/>
+    <file name="photo_01b.jpg" crc="3894795165" ref="event-info">
+      <caption webpage="event-info" alt=""/>
+    </file>
+    <file name="photo_02b.jpg" crc="307933343" ref="event-info">
+      <caption webpage="event-info" alt=""/>
+    </file>
+    <file name="photo_03b.jpg" crc="381092297" ref="event-info">
+      <caption webpage="event-info" alt=""/>
+    </file>
+    <file name="photo_04b.jpg" crc="326816877" ref="event-info">
+      <caption webpage="event-info" alt=""/>
+    </file>
+    <file name="photo_05b.jpg" crc="3970728951" ref="event-info">
+      <caption webpage="event-info" alt=""/>
+    </file>
+    <file name="photo_06b.jpg" crc="4040051098" ref="event-info">
+      <caption webpage="event-info" alt=""/>
+    </file>
+    <file name="photo_07b.jpg" crc="4045459435" ref="event-info">
+      <caption webpage="event-info" alt=""/>
+    </file>
+    <file name="photo_08b.jpg" crc="4003454090" ref="event-info">
+      <caption webpage="event-info" alt=""/>
+    </file>
+    <file name="photo_01s-u2527-fr.jpg" crc="207372129" ref="event-info"/>
+    <file name="photo_01s-u2527-r-fr2.png" crc="371541317" ref="event-info"/>
+    <file name="photo_02s-u2569-fr.jpg" crc="4245140049" ref="event-info"/>
+    <file name="photo_02s-u2569-r-fr2.png" crc="166374119" ref="event-info"/>
+    <file name="photo_03s-u2575-fr.jpg" crc="3884847821" ref="event-info"/>
+    <file name="photo_03s-u2575-r-fr2.png" crc="3762818920" ref="event-info"/>
+    <file name="photo_04s-u2581-fr.jpg" crc="3893007919" ref="event-info"/>
+    <file name="photo_04s-u2581-r-fr2.png" crc="3763110273" ref="event-info"/>
+    <file name="photo_05s-u2662-fr.jpg" crc="4038699673" ref="event-info"/>
+    <file name="photo_05s-u2662-r-fr2.png" crc="316326440" ref="event-info"/>
+    <file name="photo_06s-u2668-fr.jpg" crc="4140032237" ref="event-info"/>
+    <file name="photo_06s-u2668-r-fr2.png" crc="4074856837" ref="event-info"/>
+    <file name="photo_07s-u2674-fr.jpg" crc="507556650" ref="event-info"/>
+    <file name="photo_07s-u2674-r-fr2.png" crc="280335067" ref="event-info"/>
+    <file name="photo_08s-u2680-fr.jpg" crc="142666634" ref="event-info"/>
+    <file name="photo_08s-u2680-r-fr2.png" crc="325416459" ref="event-info"/>
+    <file name="video-u2455-fr.jpg" crc="221884461" ref="event-info"/>
+    <file name="photo_01b-u2525-fr.jpg" crc="219196943" ref="event-info"/>
+    <file name="photo_02b-u2572-fr.jpg" crc="3805016887" ref="event-info"/>
+    <file name="photo_03b-u2578-fr.jpg" crc="142306483" ref="event-info"/>
+    <file name="photo_04b-u2584-fr.jpg" crc="143623613" ref="event-info"/>
+    <file name="photo_05b-u2665-fr.jpg" crc="286532021" ref="event-info"/>
+    <file name="photo_06b-u2671-fr.jpg" crc="158003740" ref="event-info"/>
+    <file name="photo_07b-u2677-fr.jpg" crc="147703750" ref="event-info"/>
+    <file name="photo_08b-u2683-fr.jpg" crc="3839448490" ref="event-info"/>
+    <file name="video-u2455-fr2.jpg" crc="4252274542" ref="event-info"/>
+    <file name="photo_01s-u2527-fr2.jpg" crc="4223191705" ref="event-info"/>
+    <file name="photo_01s-u2527-r-fr3.png" crc="3872590241" ref="event-info"/>
+    <file name="photo_02s-u2569-fr2.jpg" crc="3888402781" ref="event-info"/>
+    <file name="photo_02s-u2569-r-fr3.png" crc="531740155" ref="event-info"/>
+    <file name="photo_03s-u2575-fr2.jpg" crc="4184075148" ref="event-info"/>
+    <file name="photo_03s-u2575-r-fr3.png" crc="4144847461" ref="event-info"/>
+    <file name="photo_04s-u2581-fr2.jpg" crc="3814277931" ref="event-info"/>
+    <file name="photo_04s-u2581-r-fr3.png" crc="398266185" ref="event-info"/>
+    <file name="photo_05s-u2662-fr2.jpg" crc="430350496" ref="event-info"/>
+    <file name="photo_05s-u2662-r-fr3.png" crc="317606007" ref="event-info"/>
+    <file name="photo_06s-u2668-fr2.jpg" crc="297548435" ref="event-info"/>
+    <file name="photo_06s-u2668-r-fr3.png" crc="67537089" ref="event-info"/>
+    <file name="photo_07s-u2674-fr2.jpg" crc="119772573" ref="event-info"/>
+    <file name="photo_07s-u2674-r-fr3.png" crc="3789939335" ref="event-info"/>
+    <file name="photo_08s-u2680-fr2.jpg" crc="3986032210" ref="event-info"/>
+    <file name="photo_08s-u2680-r-fr3.png" crc="4092384358" ref="event-info"/>
+    <file name="photo_01b-u2525-fr2.jpg" crc="528549669" ref="event-info"/>
+    <file name="photo_02b-u2572-fr2.jpg" crc="4092848512" ref="event-info"/>
+    <file name="photo_03b-u2578-fr2.jpg" crc="400008443" ref="event-info"/>
+    <file name="photo_04b-u2584-fr2.jpg" crc="108826616" ref="event-info"/>
+    <file name="photo_05b-u2665-fr2.jpg" crc="430776238" ref="event-info"/>
+    <file name="photo_06b-u2671-fr2.jpg" crc="85870034" ref="event-info"/>
+    <file name="photo_07b-u2677-fr2.jpg" crc="234480766" ref="event-info"/>
+    <file name="photo_08b-u2683-fr2.jpg" crc="290877273" ref="event-info"/>
+    <file name="video-u2455-fr3.jpg" crc="417182317" ref="event-info"/>
+    <file name="photo_01s-u2527-fr3.jpg" crc="4015906583" ref="event-info"/>
+    <file name="photo_01s-u2527-r-fr4.png" crc="51337655" ref="event-info"/>
+    <file name="photo_02s-u2569-fr3.jpg" crc="4205529564" ref="event-info"/>
+    <file name="photo_02s-u2569-r-fr4.png" crc="4012113103" ref="event-info"/>
+    <file name="photo_03s-u2575-fr3.jpg" crc="15144446" ref="event-info"/>
+    <file name="photo_03s-u2575-r-fr4.png" crc="474864944" ref="event-info"/>
+    <file name="photo_04s-u2581-fr3.jpg" crc="394275587" ref="event-info"/>
+    <file name="photo_04s-u2581-r-fr4.png" crc="485293641" ref="event-info"/>
+    <file name="photo_05s-u2662-fr3.jpg" crc="113902559" ref="event-info"/>
+    <file name="photo_05s-u2662-r-fr4.png" crc="60766752" ref="event-info"/>
+    <file name="photo_06s-u2668-fr3.jpg" crc="4280849554" ref="event-info"/>
+    <file name="photo_06s-u2668-r-fr4.png" crc="4081773531" ref="event-info"/>
+    <file name="photo_07s-u2674-fr3.jpg" crc="172580729" ref="event-info"/>
+    <file name="photo_07s-u2674-r-fr4.png" crc="3933664272" ref="event-info"/>
+    <file name="photo_08s-u2680-fr3.jpg" crc="4245482545" ref="event-info"/>
+    <file name="photo_08s-u2680-r-fr4.png" crc="307449500" ref="event-info"/>
+    <file name="photo_01b-u2525-fr3.jpg" crc="4060478911" ref="event-info"/>
+    <file name="photo_02b-u2572-fr3.jpg" crc="235540426" ref="event-info"/>
+    <file name="photo_03b-u2578-fr3.jpg" crc="4230739901" ref="event-info"/>
+    <file name="photo_04b-u2584-fr3.jpg" crc="3906461570" ref="event-info"/>
+    <file name="photo_05b-u2665-fr3.jpg" crc="3975765945" ref="event-info"/>
+    <file name="photo_06b-u2671-fr3.jpg" crc="3772914937" ref="event-info"/>
+    <file name="photo_07b-u2677-fr3.jpg" crc="127888308" ref="event-info"/>
+    <file name="photo_08b-u2683-fr3.jpg" crc="3827691316" ref="event-info"/>
+    <file name="fighter1_profile.jpg" crc="3921372726" ref="fighters">
+      <caption webpage="fighters" alt=""/>
+    </file>
+    <file name="sc_fb-u2836.png" crc="4046933638" ref="fighters"/>
+    <file name="sc_fb-u2836-r.png" crc="4005682420" ref="fighters"/>
+    <file name="sc_tw-u2850.png" crc="505233351" ref="fighters"/>
+    <file name="sc_tw-u2850-r.png" crc="4168074497" ref="fighters"/>
+    <file name="sc_insta-u2859.png" crc="196997514" ref="fighters"/>
+    <file name="sc_insta-u2859-r.png" crc="293592405" ref="fighters"/>
+    <file name="sc_yt-u2881.png" crc="66252461" ref="fighters"/>
+    <file name="sc_yt-u2881-r.png" crc="4264149775" ref="fighters"/>
+    <file name="fighter1_profile_photo01s.jpg" crc="16033158" ref="fighters">
+      <caption webpage="fighters" alt=""/>
+    </file>
+    <file name="fighter1_profile_photo01s-u2894-r-fr.png" crc="235143482" ref="fighters"/>
+    <file name="fighter1_profile_photo02s.jpg" crc="3760027423" ref="fighters">
+      <caption webpage="fighters" alt=""/>
+    </file>
+    <file name="fighter1_profile_photo02s-u2895-r-fr.png" crc="298306334" ref="fighters"/>
+    <file name="fighter1_profile_photo03s.jpg" crc="4167631039" ref="fighters">
+      <caption webpage="fighters" alt=""/>
+    </file>
+    <file name="fighter1_profile_photo03s-u2899-r-fr.png" crc="4076882969" ref="fighters"/>
+    <file name="fighter1_profile_photo04s.jpg" crc="3939869082" ref="fighters">
+      <caption webpage="fighters" alt=""/>
+    </file>
+    <file name="fighter1_profile_photo04s-u2901-r-fr.png" crc="48058948" ref="fighters"/>
+    <file name="fighter1_profile_photo01b.jpg" crc="3874053405" ref="fighters">
+      <caption webpage="fighters" alt=""/>
+    </file>
+    <file name="fighter1_profile_photo02b.jpg" crc="4167935040" ref="fighters">
+      <caption webpage="fighters" alt=""/>
+    </file>
+    <file name="fighter1_profile_photo03b.jpg" crc="4083615847" ref="fighters">
+      <caption webpage="fighters" alt=""/>
+    </file>
+    <file name="fighter1_profile_photo04b.jpg" crc="60893879" ref="fighters">
+      <caption webpage="fighters" alt=""/>
+    </file>
+    <file name="sc_fb-u3130.png" crc="4046933638" ref="fighters"/>
+    <file name="sc_fb-u3130-r.png" crc="4005682420" ref="fighters"/>
+    <file name="sc_tw-u3133.png" crc="505233351" ref="fighters"/>
+    <file name="sc_tw-u3133-r.png" crc="4168074497" ref="fighters"/>
+    <file name="sc_insta-u3136.png" crc="196997514" ref="fighters"/>
+    <file name="sc_insta-u3136-r.png" crc="293592405" ref="fighters"/>
+    <file name="sc_yt-u3139.png" crc="66252461" ref="fighters"/>
+    <file name="sc_yt-u3139-r.png" crc="4264149775" ref="fighters"/>
+    <file name="fighter2_profile.jpg" crc="494851062" ref="fighters">
+      <caption webpage="fighters" alt=""/>
+    </file>
+    <file name="fighter2_profile_photo01s.jpg" crc="3835734840" ref="fighters">
+      <caption webpage="fighters" alt=""/>
+    </file>
+    <file name="fighter2_profile_photo01s-u3149-r-fr.png" crc="4128474947" ref="fighters"/>
+    <file name="fighter2_profile_photo02s.jpg" crc="399136351" ref="fighters">
+      <caption webpage="fighters" alt=""/>
+    </file>
+    <file name="fighter2_profile_photo02s-u3150-r-fr.png" crc="519625049" ref="fighters"/>
+    <file name="fighter2_profile_photo03s.jpg" crc="3965496376" ref="fighters">
+      <caption webpage="fighters" alt=""/>
+    </file>
+    <file name="fighter2_profile_photo03s-u3152-r-fr.png" crc="3919646993" ref="fighters"/>
+    <file name="fighter2_profile_photo04s.jpg" crc="3765437275" ref="fighters">
+      <caption webpage="fighters" alt=""/>
+    </file>
+    <file name="fighter2_profile_photo04s-u3151-r-fr.png" crc="255883871" ref="fighters"/>
+    <file name="fighter2_profile_photo01b.jpg" crc="4114079757" ref="fighters">
+      <caption webpage="fighters" alt=""/>
+    </file>
+    <file name="fighter2_profile_photo02b.jpg" crc="375519162" ref="fighters">
+      <caption webpage="fighters" alt=""/>
+    </file>
+    <file name="fighter2_profile_photo03b.jpg" crc="3866280623" ref="fighters">
+      <caption webpage="fighters" alt=""/>
+    </file>
+    <file name="fighter2_profile_photo04b.jpg" crc="3885994527" ref="fighters">
+      <caption webpage="fighters" alt=""/>
+    </file>
+    <file name="sc_fb-u28362.png" crc="4046933638" ref="fighters"/>
+    <file name="sc_fb-u2836-r2.png" crc="4005682420" ref="fighters"/>
+    <file name="sc_tw-u28502.png" crc="505233351" ref="fighters"/>
+    <file name="sc_tw-u2850-r2.png" crc="4168074497" ref="fighters"/>
+    <file name="sc_insta-u28592.png" crc="196997514" ref="fighters"/>
+    <file name="sc_insta-u2859-r2.png" crc="293592405" ref="fighters"/>
+    <file name="sc_yt-u28812.png" crc="66252461" ref="fighters"/>
+    <file name="sc_yt-u2881-r2.png" crc="4264149775" ref="fighters"/>
+    <file name="sc_fb-u31302.png" crc="4046933638" ref="fighters"/>
+    <file name="sc_fb-u3130-r2.png" crc="4005682420" ref="fighters"/>
+    <file name="sc_tw-u31332.png" crc="505233351" ref="fighters"/>
+    <file name="sc_tw-u3133-r2.png" crc="4168074497" ref="fighters"/>
+    <file name="sc_insta-u31362.png" crc="196997514" ref="fighters"/>
+    <file name="sc_insta-u3136-r2.png" crc="293592405" ref="fighters"/>
+    <file name="sc_yt-u31392.png" crc="66252461" ref="fighters"/>
+    <file name="sc_yt-u3139-r2.png" crc="4264149775" ref="fighters"/>
+    <file name="fighter1_profile_photo01s-u2894-fr.jpg" crc="369647887" ref="fighters"/>
+    <file name="fighter1_profile_photo01s-u2894-r-fr2.png" crc="4237548466" ref="fighters"/>
+    <file name="fighter1_profile_photo02s-u2895-fr.jpg" crc="317122033" ref="fighters"/>
+    <file name="fighter1_profile_photo02s-u2895-r-fr2.png" crc="4096550359" ref="fighters"/>
+    <file name="fighter1_profile_photo03s-u2899-fr.jpg" crc="472206324" ref="fighters"/>
+    <file name="fighter1_profile_photo03s-u2899-r-fr2.png" crc="12178204" ref="fighters"/>
+    <file name="fighter1_profile_photo04s-u2901-fr.jpg" crc="3866134156" ref="fighters"/>
+    <file name="fighter1_profile_photo04s-u2901-r-fr2.png" crc="3925722986" ref="fighters"/>
+    <file name="fighter1_profile-u2818-fr.jpg" crc="198336023" ref="fighters"/>
+    <file name="sc_fb-u28363.png" crc="4046933638" ref="fighters"/>
+    <file name="sc_fb-u2836-r3.png" crc="4005682420" ref="fighters"/>
+    <file name="sc_tw-u28503.png" crc="505233351" ref="fighters"/>
+    <file name="sc_tw-u2850-r3.png" crc="4168074497" ref="fighters"/>
+    <file name="sc_insta-u28593.png" crc="196997514" ref="fighters"/>
+    <file name="sc_insta-u2859-r3.png" crc="293592405" ref="fighters"/>
+    <file name="sc_yt-u28813.png" crc="66252461" ref="fighters"/>
+    <file name="sc_yt-u2881-r3.png" crc="4264149775" ref="fighters"/>
+    <file name="sc_fb-u31303.png" crc="4046933638" ref="fighters"/>
+    <file name="sc_fb-u3130-r3.png" crc="4005682420" ref="fighters"/>
+    <file name="sc_tw-u31333.png" crc="505233351" ref="fighters"/>
+    <file name="sc_tw-u3133-r3.png" crc="4168074497" ref="fighters"/>
+    <file name="sc_insta-u31363.png" crc="196997514" ref="fighters"/>
+    <file name="sc_insta-u3136-r3.png" crc="293592405" ref="fighters"/>
+    <file name="sc_yt-u31393.png" crc="66252461" ref="fighters"/>
+    <file name="sc_yt-u3139-r3.png" crc="4264149775" ref="fighters"/>
+    <file name="fighter2_profile-u3115-fr.jpg" crc="450272403" ref="fighters"/>
+    <file name="fighter2_profile_photo01s-u3149-fr.jpg" crc="3812618762" ref="fighters"/>
+    <file name="fighter2_profile_photo01s-u3149-r-fr2.png" crc="4090460078" ref="fighters"/>
+    <file name="fighter2_profile_photo02s-u3150-fr.jpg" crc="4089085751" ref="fighters"/>
+    <file name="fighter2_profile_photo02s-u3150-r-fr2.png" crc="419260211" ref="fighters"/>
+    <file name="fighter2_profile_photo03s-u3152-fr.jpg" crc="3963139512" ref="fighters"/>
+    <file name="fighter2_profile_photo03s-u3152-r-fr2.png" crc="3782578734" ref="fighters"/>
+    <file name="fighter2_profile_photo04s-u3151-fr.jpg" crc="445580653" ref="fighters"/>
+    <file name="fighter2_profile_photo04s-u3151-r-fr2.png" crc="416321149" ref="fighters"/>
+    <file name="fighter1_profile_photo01s-u2894-fr2.jpg" crc="4101783832" ref="fighters"/>
+    <file name="fighter1_profile_photo01s-u2894-r-fr3.png" crc="282248039" ref="fighters"/>
+    <file name="fighter1_profile_photo02s-u2895-fr2.jpg" crc="315241413" ref="fighters"/>
+    <file name="fighter1_profile_photo02s-u2895-r-fr3.png" crc="350485470" ref="fighters"/>
+    <file name="fighter1_profile_photo03s-u2899-fr2.jpg" crc="489443496" ref="fighters"/>
+    <file name="fighter1_profile_photo03s-u2899-r-fr3.png" crc="181227684" ref="fighters"/>
+    <file name="fighter1_profile_photo04s-u2901-fr2.jpg" crc="3819448360" ref="fighters"/>
+    <file name="fighter1_profile_photo04s-u2901-r-fr3.png" crc="280070942" ref="fighters"/>
+    <file name="fighter1_profile_photo01b-u2904-fr.jpg" crc="3843953188" ref="fighters"/>
+    <file name="fighter1_profile_photo02b-u2903-fr.jpg" crc="332280928" ref="fighters"/>
+    <file name="fighter1_profile_photo03b-u2907-fr.jpg" crc="4229634121" ref="fighters"/>
+    <file name="fighter1_profile_photo04b-u2908-fr.jpg" crc="304242101" ref="fighters"/>
+    <file name="sc_fb-u28364.png" crc="4046933638" ref="fighters"/>
+    <file name="sc_fb-u2836-r4.png" crc="4005682420" ref="fighters"/>
+    <file name="sc_tw-u28504.png" crc="505233351" ref="fighters"/>
+    <file name="sc_tw-u2850-r4.png" crc="4168074497" ref="fighters"/>
+    <file name="sc_insta-u28594.png" crc="196997514" ref="fighters"/>
+    <file name="sc_insta-u2859-r4.png" crc="293592405" ref="fighters"/>
+    <file name="sc_yt-u28814.png" crc="66252461" ref="fighters"/>
+    <file name="sc_yt-u2881-r4.png" crc="4264149775" ref="fighters"/>
+    <file name="sc_fb-u31304.png" crc="4046933638" ref="fighters"/>
+    <file name="sc_fb-u3130-r4.png" crc="4005682420" ref="fighters"/>
+    <file name="sc_tw-u31334.png" crc="505233351" ref="fighters"/>
+    <file name="sc_tw-u3133-r4.png" crc="4168074497" ref="fighters"/>
+    <file name="sc_insta-u31364.png" crc="196997514" ref="fighters"/>
+    <file name="sc_insta-u3136-r4.png" crc="293592405" ref="fighters"/>
+    <file name="sc_yt-u31394.png" crc="66252461" ref="fighters"/>
+    <file name="sc_yt-u3139-r4.png" crc="4264149775" ref="fighters"/>
+    <file name="fighter2_profile_photo01s-u3149-fr2.jpg" crc="287093475" ref="fighters"/>
+    <file name="fighter2_profile_photo01s-u3149-r-fr3.png" crc="50421412" ref="fighters"/>
+    <file name="fighter2_profile_photo02s-u3150-fr2.jpg" crc="335460142" ref="fighters"/>
+    <file name="fighter2_profile_photo02s-u3150-r-fr3.png" crc="24485934" ref="fighters"/>
+    <file name="fighter2_profile_photo03s-u3152-fr2.jpg" crc="3965515624" ref="fighters"/>
+    <file name="fighter2_profile_photo03s-u3152-r-fr3.png" crc="345122063" ref="fighters"/>
+    <file name="fighter2_profile_photo04s-u3151-fr2.jpg" crc="4012023109" ref="fighters"/>
+    <file name="fighter2_profile_photo04s-u3151-r-fr3.png" crc="4115726897" ref="fighters"/>
+    <file name="fighter2_profile_photo01b-u3154-fr.jpg" crc="3786015873" ref="fighters"/>
+    <file name="fighter2_profile_photo02b-u3157-fr.jpg" crc="4148376295" ref="fighters"/>
+    <file name="fighter2_profile_photo03b-u3156-fr.jpg" crc="323395764" ref="fighters"/>
+    <file name="fighter2_profile_photo04b-u3155-fr.jpg" crc="528666472" ref="fighters"/>
+    <file name="fighter1_profile_photo01s-u2894-fr3.jpg" crc="3966476290" ref="fighters"/>
+    <file name="fighter1_profile_photo01s-u2894-r-fr4.png" crc="4195254283" ref="fighters"/>
+    <file name="fighter1_profile_photo02s-u2895-fr3.jpg" crc="122961415" ref="fighters"/>
+    <file name="fighter1_profile_photo02s-u2895-r-fr4.png" crc="3768025924" ref="fighters"/>
+    <file name="fighter1_profile_photo03s-u2899-fr3.jpg" crc="3904210272" ref="fighters"/>
+    <file name="fighter1_profile_photo03s-u2899-r-fr4.png" crc="3952681250" ref="fighters"/>
+    <file name="fighter1_profile_photo04s-u2901-fr3.jpg" crc="4160837761" ref="fighters"/>
+    <file name="fighter1_profile_photo04s-u2901-r-fr4.png" crc="97055961" ref="fighters"/>
+    <file name="fighter1_profile_photo01b-u2904-fr2.jpg" crc="3943115165" ref="fighters"/>
+    <file name="fighter1_profile_photo02b-u2903-fr2.jpg" crc="255282326" ref="fighters"/>
+    <file name="fighter1_profile_photo03b-u2907-fr2.jpg" crc="3857358213" ref="fighters"/>
+    <file name="fighter1_profile_photo04b-u2908-fr2.jpg" crc="441781328" ref="fighters"/>
+    <file name="sc_fb-u28365.png" crc="4046933638" ref="fighters"/>
+    <file name="sc_fb-u2836-r5.png" crc="4005682420" ref="fighters"/>
+    <file name="sc_tw-u28505.png" crc="505233351" ref="fighters"/>
+    <file name="sc_tw-u2850-r5.png" crc="4168074497" ref="fighters"/>
+    <file name="sc_insta-u28595.png" crc="196997514" ref="fighters"/>
+    <file name="sc_insta-u2859-r5.png" crc="293592405" ref="fighters"/>
+    <file name="sc_yt-u28815.png" crc="66252461" ref="fighters"/>
+    <file name="sc_yt-u2881-r5.png" crc="4264149775" ref="fighters"/>
+    <file name="sc_fb-u31305.png" crc="4046933638" ref="fighters"/>
+    <file name="sc_fb-u3130-r5.png" crc="4005682420" ref="fighters"/>
+    <file name="sc_tw-u31335.png" crc="505233351" ref="fighters"/>
+    <file name="sc_tw-u3133-r5.png" crc="4168074497" ref="fighters"/>
+    <file name="sc_insta-u31365.png" crc="196997514" ref="fighters"/>
+    <file name="sc_insta-u3136-r5.png" crc="293592405" ref="fighters"/>
+    <file name="sc_yt-u31395.png" crc="66252461" ref="fighters"/>
+    <file name="sc_yt-u3139-r5.png" crc="4264149775" ref="fighters"/>
+    <file name="fighter2_profile_photo01s-u3149-fr3.jpg" crc="4037627338" ref="fighters"/>
+    <file name="fighter2_profile_photo01s-u3149-r-fr4.png" crc="229244865" ref="fighters"/>
+    <file name="fighter2_profile_photo02s-u3150-fr3.jpg" crc="41772137" ref="fighters"/>
+    <file name="fighter2_profile_photo02s-u3150-r-fr4.png" crc="67947246" ref="fighters"/>
+    <file name="fighter2_profile_photo03s-u3152-fr3.jpg" crc="3798701198" ref="fighters"/>
+    <file name="fighter2_profile_photo03s-u3152-r-fr4.png" crc="312688289" ref="fighters"/>
+    <file name="fighter2_profile_photo04s-u3151-fr3.jpg" crc="407195011" ref="fighters"/>
+    <file name="fighter2_profile_photo04s-u3151-r-fr4.png" crc="3879491456" ref="fighters"/>
+    <file name="fighter2_profile_photo01b-u3154-fr2.jpg" crc="235802796" ref="fighters"/>
+    <file name="fighter2_profile_photo02b-u3157-fr2.jpg" crc="113086159" ref="fighters"/>
+    <file name="fighter2_profile_photo03b-u3156-fr2.jpg" crc="455652444" ref="fighters"/>
+    <file name="fighter2_profile_photo04b-u3155-fr2.jpg" crc="3879804687" ref="fighters"/>
+    <file name="fighter1_profile_photo01b-u2904-fr3.jpg" crc="524936617" ref="fighters"/>
+    <file name="fighter1_profile_photo02b-u2903-fr3.jpg" crc="469618378" ref="fighters"/>
+    <file name="fighter1_profile_photo03b-u2907-fr3.jpg" crc="185292947" ref="fighters"/>
+    <file name="fighter1_profile_photo04b-u2908-fr3.jpg" crc="372281572" ref="fighters"/>
+    <file name="sc_fb-u28366.png" crc="4046933638" ref="fighters"/>
+    <file name="sc_fb-u2836-r6.png" crc="4005682420" ref="fighters"/>
+    <file name="sc_tw-u28506.png" crc="505233351" ref="fighters"/>
+    <file name="sc_tw-u2850-r6.png" crc="4168074497" ref="fighters"/>
+    <file name="sc_insta-u28596.png" crc="196997514" ref="fighters"/>
+    <file name="sc_insta-u2859-r6.png" crc="293592405" ref="fighters"/>
+    <file name="sc_yt-u28816.png" crc="66252461" ref="fighters"/>
+    <file name="sc_yt-u2881-r6.png" crc="4264149775" ref="fighters"/>
+    <file name="sc_fb-u31306.png" crc="4046933638" ref="fighters"/>
+    <file name="sc_fb-u3130-r6.png" crc="4005682420" ref="fighters"/>
+    <file name="sc_tw-u31336.png" crc="505233351" ref="fighters"/>
+    <file name="sc_tw-u3133-r6.png" crc="4168074497" ref="fighters"/>
+    <file name="sc_insta-u31366.png" crc="196997514" ref="fighters"/>
+    <file name="sc_insta-u3136-r6.png" crc="293592405" ref="fighters"/>
+    <file name="sc_yt-u31396.png" crc="66252461" ref="fighters"/>
+    <file name="sc_yt-u3139-r6.png" crc="4264149775" ref="fighters"/>
+    <file name="fighter2_profile_photo01b-u3154-fr3.jpg" crc="4023963629" ref="fighters"/>
+    <file name="fighter2_profile_photo02b-u3157-fr3.jpg" crc="4123649521" ref="fighters"/>
+    <file name="fighter2_profile_photo03b-u3156-fr3.jpg" crc="164905806" ref="fighters"/>
+    <file name="fighter2_profile_photo04b-u3155-fr3.jpg" crc="381956963" ref="fighters"/>
+    <file name="sc_insta-u3291.png" crc="3983644939" ref="contacts"/>
+    <file name="sc_insta-u3291-r.png" crc="151886097" ref="contacts"/>
+    <file name="sc_tw-u3302.png" crc="531146460" ref="contacts"/>
+    <file name="sc_tw-u3302-r.png" crc="475727336" ref="contacts"/>
+    <file name="sc_fb-u3305.png" crc="3761010482" ref="contacts"/>
+    <file name="sc_fb-u3305-r.png" crc="315215977" ref="contacts"/>
+    <file name="sc_yt-u3308.png" crc="3862211847" ref="contacts"/>
+    <file name="sc_yt-u3308-r.png" crc="145354708" ref="contacts"/>
+    <file name="sc_insta-u32912.png" crc="3983644939" ref="contacts"/>
+    <file name="sc_insta-u3291-r2.png" crc="151886097" ref="contacts"/>
+    <file name="sc_tw-u33022.png" crc="531146460" ref="contacts"/>
+    <file name="sc_tw-u3302-r2.png" crc="475727336" ref="contacts"/>
+    <file name="sc_fb-u33052.png" crc="3761010482" ref="contacts"/>
+    <file name="sc_fb-u3305-r2.png" crc="315215977" ref="contacts"/>
+    <file name="sc_yt-u33082.png" crc="3862211847" ref="contacts"/>
+    <file name="sc_yt-u3308-r2.png" crc="145354708" ref="contacts"/>
+    <file name="sc_insta-u32913.png" crc="3983644939" ref="contacts"/>
+    <file name="sc_insta-u3291-r3.png" crc="151886097" ref="contacts"/>
+    <file name="sc_tw-u33023.png" crc="531146460" ref="contacts"/>
+    <file name="sc_tw-u3302-r3.png" crc="475727336" ref="contacts"/>
+    <file name="sc_fb-u33053.png" crc="3761010482" ref="contacts"/>
+    <file name="sc_fb-u3305-r3.png" crc="315215977" ref="contacts"/>
+    <file name="sc_yt-u33083.png" crc="3862211847" ref="contacts"/>
+    <file name="sc_yt-u3308-r3.png" crc="145354708" ref="contacts"/>
+    <file name="sc_insta-u32914.png" crc="3983644939" ref="contacts"/>
+    <file name="sc_insta-u3291-r4.png" crc="151886097" ref="contacts"/>
+    <file name="sc_tw-u33024.png" crc="531146460" ref="contacts"/>
+    <file name="sc_tw-u3302-r4.png" crc="475727336" ref="contacts"/>
+    <file name="sc_fb-u33054.png" crc="3761010482" ref="contacts"/>
+    <file name="sc_fb-u3305-r4.png" crc="315215977" ref="contacts"/>
+    <file name="sc_yt-u33084.png" crc="3862211847" ref="contacts"/>
+    <file name="sc_yt-u3308-r4.png" crc="145354708" ref="contacts"/>
+    <file name="sc_insta-u32915.png" crc="3983644939" ref="contacts"/>
+    <file name="sc_insta-u3291-r5.png" crc="151886097" ref="contacts"/>
+    <file name="sc_tw-u33025.png" crc="531146460" ref="contacts"/>
+    <file name="sc_tw-u3302-r5.png" crc="475727336" ref="contacts"/>
+    <file name="sc_fb-u33055.png" crc="3761010482" ref="contacts"/>
+    <file name="sc_fb-u3305-r5.png" crc="315215977" ref="contacts"/>
+    <file name="sc_yt-u33085.png" crc="3862211847" ref="contacts"/>
+    <file name="sc_yt-u3308-r5.png" crc="145354708" ref="contacts"/>
+    <file name="sc_insta-u32916.png" crc="3983644939" ref="contacts"/>
+    <file name="sc_insta-u3291-r6.png" crc="151886097" ref="contacts"/>
+    <file name="sc_tw-u33026.png" crc="531146460" ref="contacts"/>
+    <file name="sc_tw-u3302-r6.png" crc="475727336" ref="contacts"/>
+    <file name="sc_fb-u33056.png" crc="3761010482" ref="contacts"/>
+    <file name="sc_fb-u3305-r6.png" crc="315215977" ref="contacts"/>
+    <file name="sc_yt-u33086.png" crc="3862211847" ref="contacts"/>
+    <file name="sc_yt-u3308-r6.png" crc="145354708" ref="contacts"/>
+  </folder>
+  <file name="index.html" crc="4165554413" seo="true" mt="1722615208039" redirect="true"/>
+  <file name="event-info.html" crc="361038270" seo="true" mt="1722615208039" redirect="true"/>
+  <file name="fighters.html" crc="434331194" seo="true" mt="1722615208039" redirect="true"/>
+  <file name="tickets.html" crc="4215689458" seo="true" mt="1722615208039" redirect="true"/>
+  <file name="contacts.html" crc="4226506632" seo="true" mt="1722615208039" redirect="true"/>
+</manifest>
