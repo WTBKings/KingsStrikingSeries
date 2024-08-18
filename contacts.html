@@ -40,6 +40,10 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 // Scroll Variables (tweakable)
 function init(){if(!document.body)return;var e=document.body,t=document.documentElement,n=window.innerHeight,r=e.scrollHeight;root=document.compatMode.indexOf("CSS")>=0?t:e;activeElement=e;initdone=!0;if(top!=self)frame=!0;else if(r>n&&(e.offsetHeight<=n||t.offsetHeight<=n)){var i=!1,s=function(){if(!i&&t.scrollHeight!=document.height){i=!0;setTimeout(function(){t.style.height=document.height+"px";i=!1},500)}};t.style.height="";setTimeout(s,10);addEvent("DOMNodeInserted",s);addEvent("DOMNodeRemoved",s);if(root.offsetHeight<=n){var o=document.createElement("div");o.style.clear="both";e.appendChild(o)}}if(document.URL.indexOf("mail.google.com")>-1){var u=document.createElement("style");u.innerHTML=".iu { visibility: hidden }";(document.getElementsByTagName("head")[0]||t).appendChild(u)}if(!fixedback&&!disabled){e.style.backgroundAttachment="scroll";t.style.backgroundAttachment="scroll"}}function scrollArray(e,t,n,r){r||(r=1e3);directionCheck(t,n);if(acceleration){var i=+(new Date),s=i-lastScroll;if(s<accelDelta){var o=(1+30/s)/2;if(o>1){o=Math.min(o,accelMax);t*=o;n*=o}}lastScroll=+(new Date)}que.push({x:t,y:n,lastX:t<0?.99:-0.99,lastY:n<0?.99:-0.99,start:+(new Date)});if(pending)return;var u=e===document.body,a=function(){var i=+(new Date),s=0,o=0;for(var f=0;f<que.length;f++){var l=que[f],c=i-l.start,h=c>=animtime,p=h?1:c/animtime;pulseAlgorithm&&(p=pulse(p));var d=l.x*p-l.lastX>>0,v=l.y*p-l.lastY>>0;s+=d;o+=v;l.lastX+=d;l.lastY+=v;if(h){que.splice(f,1);f--}}if(u)window.scrollBy(s,o);else{s&&(e.scrollLeft+=s);o&&(e.scrollTop+=o)}!t&&!n&&(que=[]);que.length?requestFrame(a,e,r/framerate+1):pending=!1};requestFrame(a,e,0);pending=!0}function wheel(e){initdone||init();var t=e.target,n=overflowingAncestor(t);if(!n||e.defaultPrevented||isNodeName(activeElement,"embed")||isNodeName(t,"embed")&&/\.pdf/i.test(t.src))return!0;var r=e.wheelDeltaX||0,i=e.wheelDeltaY||0;!r&&!i&&(i=e.wheelDelta||0);Math.abs(r)>1.2&&(r*=stepsize/120);Math.abs(i)>1.2&&(i*=stepsize/120);scrollArray(n,-r,-i);e.preventDefault()}function keydown(e){var t=e.target,n=e.ctrlKey||e.altKey||e.metaKey||e.shiftKey&&e.keyCode!==key.spacebar;if(/input|textarea|select|embed/i.test(t.nodeName)||t.isContentEditable||e.defaultPrevented||n)return!0;if(isNodeName(t,"button")&&e.keyCode===key.spacebar)return!0;var r,i=0,s=0,o=overflowingAncestor(activeElement),u=o.clientHeight;o==document.body&&(u=window.innerHeight);switch(e.keyCode){case key.up:s=-arrowscroll;break;case key.down:s=arrowscroll;break;case key.spacebar:r=e.shiftKey?1:-1;s=-r*u*.9;break;case key.pageup:s=-u*.9;break;case key.pagedown:s=u*.9;break;case key.home:s=-o.scrollTop;break;case key.end:var a=o.scrollHeight-o.scrollTop-u;s=a>0?a+10:0;break;case key.left:i=-arrowscroll;break;case key.right:i=arrowscroll;break;default:return!0}scrollArray(o,i,s);e.preventDefault()}function mousedown(e){activeElement=e.target}function setCache(e,t){for(var n=e.length;n--;)cache[uniqueID(e[n])]=t;return t}function overflowingAncestor(e){var t=[],n=root.scrollHeight;do{var r=cache[uniqueID(e)];if(r)return setCache(t,r);t.push(e);if(n===e.scrollHeight){if(!frame||root.clientHeight+10<n)return setCache(t,document.body)}else if(e.clientHeight+10<e.scrollHeight){overflow=getComputedStyle(e,"").getPropertyValue("overflow-y");if(overflow==="scroll"||overflow==="auto")return setCache(t,e)}}while(e=e.parentNode)}function addEvent(e,t,n){window.addEventListener(e,t,n||!1)}function removeEvent(e,t,n){window.removeEventListener(e,t,n||!1)}function isNodeName(e,t){return(e.nodeName||"").toLowerCase()===t.toLowerCase()}function directionCheck(e,t){e=e>0?1:-1;t=t>0?1:-1;if(direction.x!==e||direction.y!==t){direction.x=e;direction.y=t;que=[];lastScroll=0}}function pulse_(e){var t,n,r;e*=pulseScale;if(e<1)t=e-(1-Math.exp(-e));else{n=Math.exp(-1);e-=1;r=1-Math.exp(-e);t=n+r*(1-n)}return t*pulseNormalize}function pulse(e){if(e>=1)return 1;if(e<=0)return 0;pulseNormalize==1&&(pulseNormalize/=pulse_(1));return pulse_(e)}var framerate=150,animtime=1e3,stepsize=80,pulseAlgorithm=!0,pulseScale=8,pulseNormalize=1,acceleration=!0,accelDelta=10,accelMax=1,keyboardsupport=!0,disableKeyboard=!1,arrowscroll=50,exclude="",disabled=!1,frame=!1,direction={x:0,y:0},initdone=!1,fixedback=!0,root=document.documentElement,activeElement,key={left:37,up:38,right:39,down:40,spacebar:32,pageup:33,pagedown:34,end:35,home:36},que=[],pending=!1,lastScroll=+(new Date),cache={};setInterval(function(){cache={}},1e4);var uniqueID=function(){var e=0;return function(t){return t.uniqueID||(t.uniqueID=e++)}}(),requestFrame=function(){return window.requestAnimationFrame||window.webkitRequestAnimationFrame||function(e,t,n){window.setTimeout(e,n||1e3/60)}}();addEvent("mousedown",mousedown);addEvent("mousewheel",wheel);addEvent("load",init);
 </script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  emailjs.init("s-TFvfaYu401MxPr6");
+</script>
  </head>
  <body>
 
@@ -85,14 +89,14 @@ function init(){if(!document.body)return;var e=document.body,t=document.document
      <div class="clearfix colelem shared_content" id="u3335-5" data-content-guid="u3335-5_content"><!-- content -->
       <p>Send <span id="u3335-2">Message</span></p>
      </div>
-     <form class="form-grp clearfix colelem" id="widgetu3338" method="post" enctype="multipart/form-data" action="scripts/form-u3338.php"><!-- none box -->
+     <form class="form-grp clearfix colelem" id="widgetu3338" method="post" enctype="multipart/form-data"><!-- none box -->
       <div class="fld-grp clearfix grpelem" id="widgetu3341" data-required="true"><!-- none box -->
        <label class="fld-label actAsDiv clearfix grpelem" id="u3344-4" for="widgetu3341_input"><!-- content --><span class="actAsPara shared_content" data-content-guid="u3344-4_0_content">Name:</span></label>
-       <span class="fld-input NoWrap actAsDiv transition clearfix grpelem" id="u3343-4"><!-- content --><input class="wrapped-input shared_content" type="text" spellcheck="false" id="widgetu3341_input" name="custom_U3341" tabindex="1" data-content-guid="widgetu3341_input_content"/><label class="wrapped-input fld-prompt" id="widgetu3341_prompt" for="widgetu3341_input"><span class="actAsPara shared_content" data-content-guid="widgetu3341_prompt_0_content">Enter Name</span></label></span>
+       <span class="fld-input NoWrap actAsDiv transition clearfix grpelem" id="u3343-4"><!-- content --><input class="wrapped-input shared_content" type="text" spellcheck="false" id="widgetu3341_input" name="name" tabindex="1" data-content-guid="widgetu3341_input_content" required/><label class="wrapped-input fld-prompt" id="widgetu3341_prompt" for="widgetu3341_input"><span class="actAsPara shared_content" data-content-guid="widgetu3341_prompt_0_content">Enter Name</span></label></span>
       </div>
       <div class="fld-grp clearfix grpelem" id="widgetu3351" data-required="true" data-type="email"><!-- none box -->
        <label class="fld-label actAsDiv clearfix grpelem" id="u3352-4" for="widgetu3351_input"><!-- content --><span class="actAsPara shared_content" data-content-guid="u3352-4_0_content">Email:</span></label>
-       <span class="fld-input NoWrap actAsDiv transition clearfix grpelem" id="u3353-4"><!-- content --><input class="wrapped-input shared_content" type="email" spellcheck="false" id="widgetu3351_input" name="Email" tabindex="2" data-content-guid="widgetu3351_input_content"/><label class="wrapped-input fld-prompt" id="widgetu3351_prompt" for="widgetu3351_input"><span class="actAsPara shared_content" data-content-guid="widgetu3351_prompt_0_content">Enter Email</span></label></span>
+       <span class="fld-input NoWrap actAsDiv transition clearfix grpelem" id="u3353-4"><!-- content --><input class="wrapped-input shared_content" type="email" spellcheck="false" id="widgetu3351_input" name="email" tabindex="2" data-content-guid="widgetu3351_input_content" required/><label class="wrapped-input fld-prompt" id="widgetu3351_prompt" for="widgetu3351_input"><span class="actAsPara shared_content" data-content-guid="widgetu3351_prompt_0_content">Enter Email</span></label></span>
       </div>
       <div class="clearfix grpelem" id="u3340-4"><!-- content -->
        <p class="shared_content" data-content-guid="u3340-4_0_content">Submitting Form...</p>
@@ -110,7 +114,7 @@ function init(){if(!document.body)return;var e=document.body,t=document.document
       </button>
       <div class="fld-grp clearfix grpelem" id="widgetu3345" data-required="false"><!-- none box -->
        <label class="fld-label actAsDiv clearfix grpelem" id="u3346-4" for="widgetu3345_input"><!-- content --><span class="actAsPara shared_content" data-content-guid="u3346-4_0_content">Message:</span></label>
-       <span class="fld-textarea actAsDiv transition clearfix grpelem" id="u3348-4"><!-- content --><textarea class="wrapped-input shared_content" id="widgetu3345_input" name="custom_U3345" tabindex="3" data-content-guid="widgetu3345_input_content"></textarea><label class="wrapped-input fld-prompt" id="widgetu3345_prompt" for="widgetu3345_input"><span class="actAsPara shared_content" data-content-guid="widgetu3345_prompt_0_content">Enter Your Message</span></label></span>
+       <span class="fld-textarea actAsDiv transition clearfix grpelem" id="u3348-4"><!-- content --><textarea required class="wrapped-input shared_content" id="widgetu3345_input" name="message" tabindex="3" data-content-guid="widgetu3345_input_content"></textarea><label class="wrapped-input fld-prompt" id="widgetu3345_prompt" for="widgetu3345_input"><span class="actAsPara shared_content" data-content-guid="widgetu3345_prompt_0_content">Enter Your Message</span></label></span>
       </div>
      </form>
      <div class="clearfix colelem shared_content" id="ppu2594" data-content-guid="ppu2594_content"><!-- group -->
@@ -164,7 +168,7 @@ function init(){if(!document.body)return;var e=document.body,t=document.document
     <div class="clearfix grpelem temp_no_id" data-orig-id="ppu3271"><!-- column -->
      <span class="clearfix colelem placeholder" data-placeholder-for="pu3271_content"><!-- placeholder node --></span>
      <span class="clearfix colelem placeholder" data-placeholder-for="u3335-5_content"><!-- placeholder node --></span>
-     <form class="form-grp clearfix colelem temp_no_id" method="post" enctype="multipart/form-data" action="scripts/form-u3338.php" data-orig-id="widgetu3338"><!-- none box -->
+     <form class="form-grp clearfix colelem temp_no_id" method="post" enctype="multipart/form-data" data-orig-id="widgetu3338"><!-- none box -->
       <div class="fld-grp clearfix grpelem temp_no_id" data-required="true" data-orig-id="widgetu3341"><!-- none box -->
        <label class="fld-label actAsDiv clearfix grpelem temp_no_id" for="widgetu3341_input" data-orig-id="u3344-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u3344-4_0_content"><!-- placeholder node --></span></label>
        <span class="fld-input NoWrap actAsDiv transition clearfix grpelem temp_no_id" data-orig-id="u3343-4"><!-- content --><span class="wrapped-input placeholder" data-placeholder-for="widgetu3341_input_content"><!-- placeholder node --></span><label class="wrapped-input fld-prompt temp_no_id" for="widgetu3341_input" data-orig-id="widgetu3341_prompt"><span class="actAsPara placeholder" data-placeholder-for="widgetu3341_prompt_0_content"><!-- placeholder node --></span></label></span>
@@ -255,7 +259,7 @@ function init(){if(!document.body)return;var e=document.body,t=document.document
     <div class="clearfix grpelem temp_no_id" data-orig-id="ppu3271"><!-- column -->
      <span class="clearfix colelem placeholder" data-placeholder-for="pu3271_content"><!-- placeholder node --></span>
      <span class="clearfix colelem placeholder" data-placeholder-for="u3335-5_content"><!-- placeholder node --></span>
-     <form class="form-grp clearfix colelem temp_no_id" method="post" enctype="multipart/form-data" action="scripts/form-u3338.php" data-orig-id="widgetu3338"><!-- none box -->
+     <form class="form-grp clearfix colelem temp_no_id" method="post" enctype="multipart/form-data" data-orig-id="widgetu3338"><!-- none box -->
       <div class="fld-grp clearfix grpelem temp_no_id" data-required="true" data-orig-id="widgetu3341"><!-- none box -->
        <label class="fld-label actAsDiv clearfix grpelem temp_no_id" for="widgetu3341_input" data-orig-id="u3344-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u3344-4_0_content"><!-- placeholder node --></span></label>
        <span class="fld-input NoWrap actAsDiv transition clearfix grpelem temp_no_id" data-orig-id="u3343-4"><!-- content --><span class="wrapped-input placeholder" data-placeholder-for="widgetu3341_input_content"><!-- placeholder node --></span><label class="wrapped-input fld-prompt temp_no_id" for="widgetu3341_input" data-orig-id="widgetu3341_prompt"><span class="actAsPara placeholder" data-placeholder-for="widgetu3341_prompt_0_content"><!-- placeholder node --></span></label></span>
@@ -324,7 +328,7 @@ function init(){if(!document.body)return;var e=document.body,t=document.document
     <div class="clearfix grpelem temp_no_id" data-orig-id="ppu3271"><!-- column -->
      <span class="clearfix colelem placeholder" data-placeholder-for="pu3271_content"><!-- placeholder node --></span>
      <span class="clearfix colelem placeholder" data-placeholder-for="u3335-5_content"><!-- placeholder node --></span>
-     <form class="form-grp clearfix colelem temp_no_id" method="post" enctype="multipart/form-data" action="scripts/form-u3338.php" data-orig-id="widgetu3338"><!-- none box -->
+     <form class="form-grp clearfix colelem temp_no_id" method="post" enctype="multipart/form-data" data-orig-id="widgetu3338"><!-- none box -->
       <div class="fld-grp clearfix grpelem temp_no_id" data-required="true" data-orig-id="widgetu3341"><!-- none box -->
        <label class="fld-label actAsDiv clearfix grpelem temp_no_id" for="widgetu3341_input" data-orig-id="u3344-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u3344-4_0_content"><!-- placeholder node --></span></label>
        <span class="fld-input NoWrap actAsDiv transition clearfix grpelem temp_no_id" data-orig-id="u3343-4"><!-- content --><span class="wrapped-input placeholder" data-placeholder-for="widgetu3341_input_content"><!-- placeholder node --></span><label class="wrapped-input fld-prompt temp_no_id" for="widgetu3341_input" data-orig-id="widgetu3341_prompt"><span class="actAsPara placeholder" data-placeholder-for="widgetu3341_prompt_0_content"><!-- placeholder node --></span></label></span>
@@ -379,7 +383,7 @@ function init(){if(!document.body)return;var e=document.body,t=document.document
     <div class="clearfix grpelem temp_no_id" data-orig-id="ppu3271"><!-- column -->
      <span class="clearfix colelem placeholder" data-placeholder-for="pu3271_content"><!-- placeholder node --></span>
      <span class="clearfix colelem placeholder" data-placeholder-for="u3335-5_content"><!-- placeholder node --></span>
-     <form class="form-grp clearfix colelem temp_no_id" method="post" enctype="multipart/form-data" action="scripts/form-u3338.php" data-orig-id="widgetu3338"><!-- none box -->
+     <form class="form-grp clearfix colelem temp_no_id" method="post" enctype="multipart/form-data" data-orig-id="widgetu3338"><!-- none box -->
       <div class="fld-grp clearfix grpelem temp_no_id" data-required="true" data-orig-id="widgetu3341"><!-- none box -->
        <label class="fld-label actAsDiv clearfix grpelem temp_no_id" for="widgetu3341_input" data-orig-id="u3344-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u3344-4_0_content"><!-- placeholder node --></span></label>
        <span class="fld-input NoWrap actAsDiv transition clearfix grpelem temp_no_id" data-orig-id="u3343-4"><!-- content --><span class="wrapped-input placeholder" data-placeholder-for="widgetu3341_input_content"><!-- placeholder node --></span><label class="wrapped-input fld-prompt temp_no_id" for="widgetu3341_input" data-orig-id="widgetu3341_prompt"><span class="actAsPara placeholder" data-placeholder-for="widgetu3341_prompt_0_content"><!-- placeholder node --></span></label></span>
@@ -494,7 +498,7 @@ function init(){if(!document.body)return;var e=document.body,t=document.document
       <span class="transition grpelem placeholder" data-placeholder-for="u3302_content"><!-- placeholder node --></span>
       <span class="transition grpelem placeholder" data-placeholder-for="u3305_content"><!-- placeholder node --></span>
       <span class="transition grpelem placeholder" data-placeholder-for="u3308_content"><!-- placeholder node --></span>
-      <form class="form-grp clearfix grpelem temp_no_id" method="post" enctype="multipart/form-data" action="scripts/form-u3338.php" data-orig-id="widgetu3338"><!-- none box -->
+      <form class="form-grp clearfix grpelem temp_no_id" method="post" enctype="multipart/form-data" data-orig-id="widgetu3338"><!-- none box -->
        <div class="fld-grp clearfix grpelem temp_no_id" data-required="true" data-orig-id="widgetu3341"><!-- none box -->
         <label class="fld-label actAsDiv clearfix grpelem temp_no_id" for="widgetu3341_input" data-orig-id="u3344-4"><!-- content --><span class="actAsPara placeholder" data-placeholder-for="u3344-4_0_content"><!-- placeholder node --></span></label>
         <span class="fld-input NoWrap actAsDiv transition clearfix grpelem temp_no_id" data-orig-id="u3343-4"><!-- content --><span class="wrapped-input placeholder" data-placeholder-for="widgetu3341_input_content"><!-- placeholder node --></span><label class="wrapped-input fld-prompt temp_no_id" for="widgetu3341_input" data-orig-id="widgetu3341_prompt"><span class="actAsPara placeholder" data-placeholder-for="widgetu3341_prompt_0_content"><!-- placeholder node --></span></label></span>
@@ -612,5 +616,21 @@ Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
 </script>
   <!-- RequireJS script -->
   <script src="scripts/require.js?crc=4177726516" type="text/javascript" async data-main="scripts/museconfig.js?crc=128606099" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
-   </body>
+  <script>
+    document.getElementById('widgetu3338').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      const form = event.target;
+
+      emailjs.sendForm('service_53k5njt', 'template_dfittlq', form)
+        .then(function(response) {
+          console.log('Success:', response);
+          alert('Email sent successfully!');
+        }, function(error) {
+          console.error('Error:', error);
+          alert('Failed to send email.');
+        });
+    });
+  </script>   
+</body>
 </html>
